@@ -40,8 +40,8 @@ const GatitosSlider = () => {
           <div className={styles.slider}>
             {visibleCards.map((card, index) => (
               <GatitoCard 
-                key={index}
-                imagen={card.url} 
+                key={card.id} // Asegúrate de usar una clave única
+                cat={card} 
               />
             ))}
           </div>
